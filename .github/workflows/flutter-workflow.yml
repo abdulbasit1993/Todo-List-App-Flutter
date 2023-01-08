@@ -2,10 +2,10 @@ name: Flutter CI/CD
 
 on:
   push:
+    tags:
+      - "*"
     branches:
       - master
-    tags:
-      - "v*"
 
 jobs:
   build:
