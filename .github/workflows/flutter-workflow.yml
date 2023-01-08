@@ -39,7 +39,7 @@ jobs:
         run: flutter pub get
 
       - name: Build APPBUNDLE
-        run: flutter flutter build apk
+        run: flutter build apk --release
 
       - name: Create Github Release
         uses: ncipollo/release-action@v1
