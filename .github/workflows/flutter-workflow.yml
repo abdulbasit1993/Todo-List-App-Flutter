@@ -6,7 +6,7 @@ name: Flutter CI CD
 on:
   push:
     tags:
-      - "v*.*.*" # on every version tag will build a new android artifact example: v3.1.2+6
+      - "*" # on every version tag will build a new android artifact example: v3.1.2+6
 jobs:
   build:
     name: Build Artifacts and Release
