@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    tags:
+      - "v*"
 
 jobs:
   build:
@@ -27,4 +29,3 @@ jobs:
       - uses: ncipollo/release-action@v2
         with:
           artifacts: "build/app/outputs/apk/release/*.apk"
-          token: $
